@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { F2lCase } from "../../core/algs/f2ls";
 import { Alg } from "./alg";
 
@@ -7,15 +8,15 @@ interface CaseProps {
 
 export function Case(props: CaseProps) {
   return (
-    <>
-      <td className="border-collapse border-2 border-black align-top" style={{ width: 64 }}>
+    <div className={classNames("flex border-black border flex-grow")} style={{ marginLeft: -1, marginTop: -1 }}>
+      <div className="border-r border-black">
         <img src={`/cases/${props.case.picture}`} width={64} height={64} />
-      </td>
-      <td className="border-collapse border-2 border-black align-top">
+      </div>
+      <div className="px-1">
         {props.case.algs.map((alg, index) => (
           <Alg key={index} alg={alg} />
         ))}
-      </td>
-    </>
+      </div>
+    </div>
   );
 }

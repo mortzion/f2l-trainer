@@ -1,5 +1,5 @@
 /**
- * OLL algs from https://jperm.net/algs/oll. Go check his youtube channel.
+ * OLL algs from https://jperm.net/algs/oll. Go check his YouTube channel.
  */
 export const OLLS = [
   "R U R' U' R U' R' F' U' F R U R'",

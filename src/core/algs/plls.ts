@@ -1,5 +1,5 @@
 /**
- * PLL algs from https://jperm.net/algs/pll. Go check his youtube channel.
+ * PLL algs from https://jperm.net/algs/pll. Go check his YouTube channel.
  */
 export const PLLS = [
   "x L2 D2 L' U' L D2 L' U L' x'",

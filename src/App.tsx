@@ -6,14 +6,16 @@ import { AppFooter } from "./ui/components/app-footer";
 
 function App() {
   return (
-    <div className="flex align-middle flex-col gap-10">
+    <>
       <AppHeader />
-      <TrainingSection />
-      {F2L_SECTIONS.map((section) => (
-        <Section key={section.name} section={section} />
-      ))}
+      <div className="flex align-middle flex-col gap-10 mx-5">
+        <TrainingSection />
+        {F2L_SECTIONS.map((section) => (
+          <Section key={section.name} section={section} />
+        ))}
+      </div>
       <AppFooter />
-    </div>
+    </>
   );
 }
 

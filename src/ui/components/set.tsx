@@ -1,4 +1,3 @@
-import { chunk } from "lodash";
 import * as f2l from "../../core/algs/f2ls";
 import { Case } from "./case";
 import { StyledText } from "./styled-text";
@@ -9,7 +8,7 @@ interface Props {
 
 export function Set(props: Props) {
   return (
-    <div className="mx-10 mb-14">
+    <div className="mb-14">
       <div className="flex items-center">
         <div>
           {props.set.description && (
@@ -25,17 +24,11 @@ export function Set(props: Props) {
         </div>
         <img src="how-to-read.png" width="64" className="ml-auto" />
       </div>
-      <table className="border-collapse border-2 border-black w-full">
-        <tbody>
-          {chunk(props.set.cases, 2).map((row, index) => (
-            <tr key={index}>
-              {row.map((f2l, index) => (
-                <Case key={index} case={f2l} />
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="grid grid-cols-1 sm:grid-cols-2">
+        {props.set.cases.map((f2l, index) => (
+          <Case key={index} case={f2l} />
+        ))}
+      </div>
     </div>
   );
 }

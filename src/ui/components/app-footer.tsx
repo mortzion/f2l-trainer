@@ -1,6 +1,6 @@
 export function AppFooter() {
   return (
-    <div id="acknowledgments" className="mx-10 mb-10">
+    <div id="acknowledgments" className="mx-5 mb-5">
       <p>
         Cube visualization using{" "}
         <a className="text-blue-500 underline" href="https://js.cubing.net/cubing/">

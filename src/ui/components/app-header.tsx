@@ -1,6 +1,6 @@
 export function AppHeader() {
   return (
-    <div className="flex self-end items-center gap-x-4 p-5 absolute">
+    <div className="flex justify-end items-center gap-x-4 p-5">
       <a className="text-blue-500 underline" href="#acknowledgments">
         Acknowledgments
       </a>
